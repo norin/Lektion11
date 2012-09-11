@@ -1,7 +1,7 @@
 ﻿@model Lektion11.Web.ViewModels.ProductListViewModel
 
 <div>
-    Pages: @Html.PageLinks(Model.PagingInfo, x => Url.Action("Index", new {page = x}))
+    Pages: @Html.PageLinks(Model.PagingInfo, x => Url.Action("ProductList", new {page = x}))
 </div>
 
 <div id="products" class="products">

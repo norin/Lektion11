@@ -20,6 +20,7 @@ namespace Lektion11.Web.HtmlHelpers
                 TagBuilder tag = new TagBuilder("a");
                 tag.MergeAttribute("href", pageUrl(i));
                 tag.InnerHtml = i.ToString();
+                tag.AddCssClass("pageNumber");
                 if (i == pagingInfo.CurrentPage)
                     tag.AddCssClass("selected");
                 result.Append(tag.ToString());
