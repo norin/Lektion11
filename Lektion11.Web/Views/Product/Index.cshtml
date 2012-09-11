@@ -28,3 +28,18 @@ Loading data...
 @Html.Action("ProductList", new { page = Model })
 
 </div>
+
+@section Scripts {
+<script type="text/javascript">
+    $(function () {
+        $('.pageNumber').click(function () {
+            var productDiv = $('#productData').addClass('loading');
+            var pageNo = parseInt($(this).html());
+            $.get('@Url.Action("List")', { 'page': pageNo }, function (data) {
+                productDiv.html(data).removeClass('loading');
+            });
+            return false;
+        });
+    });
+</script>
+}
