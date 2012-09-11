@@ -1,0 +1,17 @@
+﻿@model int
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<div id="filteredList">
+
+@Html.Action("ProductList", new { page = Model })
+
+</div>
