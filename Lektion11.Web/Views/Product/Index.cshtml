@@ -10,6 +10,13 @@
     @Html.ActionLink("Create New", "Create")
 </p>
 
+<div>
+Form here...
+</div>
+<div id="progress">
+Loading data...
+</div>
+
 <div id="filteredList">
 
 @Html.Action("ProductList", new { page = Model })
