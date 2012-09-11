@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lektion11.Web", "Lektion11.Web\Lektion11.Web.csproj", "{C032E3C2-E944-4F1B-AB97-8C56D9B0985A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lektion11.Data", "Lektion11.Data\Lektion11.Data.csproj", "{7C7A2E7A-4237-42EA-8139-BCFAC72902FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lektion11.Tests", "Lektion11.Tests\Lektion11.Tests.csproj", "{D7ADEA23-864A-43D0-966C-A16A5BA818E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{08C3428A-D8A5-4C39-827A-E31E3A683DFF}"
+	ProjectSection(SolutionItems) = preProject
+		Lektion11.vsmdi = Lektion11.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EAE60CDE-D5FC-4E55-B27D-C1F21A1D85A6}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Lektion11.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C032E3C2-E944-4F1B-AB97-8C56D9B0985A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C032E3C2-E944-4F1B-AB97-8C56D9B0985A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C032E3C2-E944-4F1B-AB97-8C56D9B0985A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C032E3C2-E944-4F1B-AB97-8C56D9B0985A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C7A2E7A-4237-42EA-8139-BCFAC72902FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C7A2E7A-4237-42EA-8139-BCFAC72902FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C7A2E7A-4237-42EA-8139-BCFAC72902FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C7A2E7A-4237-42EA-8139-BCFAC72902FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7ADEA23-864A-43D0-966C-A16A5BA818E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7ADEA23-864A-43D0-966C-A16A5BA818E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7ADEA23-864A-43D0-966C-A16A5BA818E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7ADEA23-864A-43D0-966C-A16A5BA818E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
