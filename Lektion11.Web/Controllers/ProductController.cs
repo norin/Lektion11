@@ -38,15 +38,16 @@ namespace Lektion11.Web.Controllers
         {
             Func<Product, bool> nameFilter = p => p.Name.Contains(searchString);
 
-            var products = _productRepo.GetProducts(PageSize * (page - 1), PageSize);
+            var products = _productRepo.GetProducts(PageSize * (page - 1), PageSize, nameFilter);
 
             var pageInfo = new PagingInfo { CurrentPage = page,
                                             ItemsPerPage = PageSize,
-                                            TotalItems = _productRepo.GetProducts(0, null).Count()
+                                            TotalItems = _productRepo.GetProducts(0, null, nameFilter).Count()
             };
 
             var vm = new ProductListViewModel { Products = products, 
-                                                PagingInfo = pageInfo
+                                                PagingInfo = pageInfo,
+                                                SearchString = searchString
                                                 };
 
             return PartialView("_PageableProductList", vm);
