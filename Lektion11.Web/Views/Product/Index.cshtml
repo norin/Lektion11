@@ -11,7 +11,13 @@
 </p>
 
 <div>
-Form here...
+@using (Ajax.BeginForm("ProductList",
+                            new AjaxOptions { InsertionMode = InsertionMode.Replace,
+                                                LoadingElementId = "progress",
+                                                UpdateTargetId = "filteredList" })) {
+    @Html.TextBox("searchString");
+    <input type="submit" value="Search" />
+}
 </div>
 <div id="progress">
 Loading data...
